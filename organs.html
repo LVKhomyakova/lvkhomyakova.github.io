@@ -11,9 +11,9 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <img src="src/img/main/logo200.jpg" alt="Череп" width="100%">
+            <a href="index.html"><img src="src/img/main/logo200.jpg" alt="Череп" width="100%"></a>
         </div>
-        <h1 class="header__title">Секреты&nbsp;человека</h1>
+        <a href="index.html"><h1 class="header__title">Секреты&nbsp;человека</h1></a>
         <nav class="header__menu">
             <input type="checkbox" id="menu">
             <label class=" btn" for="menu">&#9776</label>
@@ -26,7 +26,108 @@
             </ul>
         </nav>
     </header>
-    <h1>Органы и Пищеварение</h1>
+    <main class="main">
+        <input type="checkbox" id="facts">
+        <label class="btn" for="facts">Интересные факты</label>
+        
+        <aside class="aside aside-left">
+            <h3>Интереcные факты</h3>
+            <section class="liver">
+                <h3>ПЕЧЕНЬ</h3>
+                <ul>
+                    <li>&bull;	&nbsp;Самый большой орган (не считая кожи).</li>
+                    <li>&bull;	&nbsp;Выполняет более 500 функций (включая обезвреживание ядов и токсинов).</li>
+                    <li>&bull;	&nbsp;Способная к регенерации (удалив часть - полностью восстанавливается).</li>
+                    <li>&bull;	&nbsp;Депо для крови, витаминов, жиров, железа, глюкозы.</li>
+                    <li>&bull;	&nbsp;Никогда не болит.</li>
+                </ul>
+            </section>
+            <section  class="kidneys-bladder">
+                <h3>ПОЧКИ, МОЧЕВОЙ ПУЗЫРЬ</h3>
+                <ul>
+                    <li>&bull;	&nbsp;Почка состоит из 1 миллиона фильтрующих элементов.</li>
+                    <li>&bull;	&nbsp;После очищения крови отходы собираются в мочевом пузыре.</li>
+                    <li>&bull;	&nbsp;Обьем мочевого пузыря 400-450мл.</li>
+                    <li>&bull;	&nbsp;Длительность здорового мочеиспускания около 7 сек.</li>
+                    <li>&bull;	&nbsp;При переполнении мочевой пузырь лопнуть не может.</li>
+                </ul>
+            </section>
+        </aside>
+
+        <div class="main-title"><h2>Органы и Пищеварение</h2></div>
+        
+        <ul class="main-menu menu">
+            <li class="menu__item btn" 
+            onmouseover="showPreview('liver-img')" 
+            onmouseout="hidePreview('liver-img')"
+            onclick="showPopup(this,'popup-liver')">Печень</li>
+
+            <li class="menu__item btn"
+            onmouseover="showPreview('kidneys-bladder-img')" 
+            onmouseout="hidePreview('kidneys-bladder-img')"
+            onclick="showPopup(this,'popup-kidneys-bladder')">Почки,&nbsp;Мочевой&nbsp;пузырь</li>
+
+            <li class="menu__item btn"
+            onmouseover="showPreview('stomach-img')" 
+            onmouseout="hidePreview('stomach-img')"
+            onclick="showPopup(this,'popup-stomach')">Желудок</li>
+
+            <li class="menu__item btn"
+            onmouseover="showPreview('intestines-img')" 
+            onmouseout="hidePreview('intestines-img')"
+            onclick="showPopup(this,'popup-intestines')">Кишечник</li>
+        </ul>
+     
+        <img class="main-content" id="liver-img" src="src/img/organs/liver-main.png" alt="Печень" width="100%">
+        <img class="main-content" id="kidneys-bladder-img" src="src/img/organs/kidneys-bladder-main.png" alt="Почки и мочевой пузырь" width="100%">
+        <img class="main-content" id="stomach-img" src="src/img/organs/stomach-main.png" alt="Желудок" width="100%">
+        <img class="main-content" id="intestines-img" src="src/img/organs/intestines-main.png" alt="Кишечник" width="100%">
+
+
+        <div id="popup-liver" class="popup">
+            <hr><h4>Строение печени</h4>
+            <hr><img src="src/img/organs/liver.png" alt="Строение печени" width="100%">
+            <hr>
+        </div>
+        <div id="popup-kidneys-bladder" class="popup">
+            <hr><h4>Строение почек и мочевого пузыря</h4>
+            <hr><img src="src/img/organs/kidneys-bladder.png" alt="Строение почек и мочевого пузыря" width="100%">
+            <hr>
+        </div>
+        <div id="popup-stomach" class="popup">
+            <hr><h4>Строение желудка</h4>
+            <hr><img src="src/img/organs/stomach.png" alt="Строение желудка" width="100%">
+            <hr>
+        </div>
+        <div id="popup-intestines" class="popup">
+            <hr><h4>Строение кишечника</h4>
+            <hr><img src="src/img/organs/intestines.png" alt="Строение кишечника" width="100%">
+            <hr>
+        </div>
+
+        <aside class="aside aside-right">
+            <h3>Интереcные факты</h3>
+            <section  class="stomach">
+                <h3>ЖЕЛУДОК</h3>
+                <ul>
+                    <li>&bull;	&nbsp;Объем пустого желудка около 0.5л, после еды он обычно растягивается до 1л, но может и до 4л.</li>
+                    <li>&bull;	&nbsp;Пища попадет в желудко даже, если стоять на голове.</li>
+                    <li>&bull;	&nbsp;Из-за кислой среды слизистая желудка постоянно обновляется, чтобы не переварить себя.</li>
+                    <li>&bull;	&nbsp;Большая часть пищи переваривается не в желудке.</li>
+                </ul>
+            </section>
+            <section  class="intestines">
+                <h3>КИШЕЧНИК</h3>
+                <ul>
+                    <li>&bull;	&nbsp;Тонкая кишка расщепляет вещества из желудка и обеспечивает их всасывание в кровь.</li>
+                    <li>&bull;	&nbsp;Толстая кишка формирует и выводит непереваренные остатки пищи.</li>
+                    <li>&bull;	&nbsp;Длина тонкой кишки более 6м., а толстой - около 2м.</li>
+                    <li>&bull;	&nbsp;Полный процесс переваривания пищи может длиться около суток.</li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
     <footer class="footer">
         <nav class="footer__nav">Навигация</nav>
         <div class="footer__social">Социальные сети</div>

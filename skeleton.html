@@ -11,9 +11,9 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <img src="src/img/main/logo200.jpg" alt="Череп" width="100%">
+            <a href="index.html"><img src="src/img/main/logo200.jpg" alt="Череп" width="100%"></a>
         </div>
-        <h1 class="header__title">Секреты&nbsp;человека</h1>
+        <a href="index.html"><h1 class="header__title">Секреты&nbsp;человека</h1></a>
         <nav class="header__menu">
             <input type="checkbox" id="menu">
             <label class=" btn" for="menu">&#9776</label>
@@ -27,7 +27,74 @@
         </nav>
     </header>
     
-<h1>Мышцы и Кости</h1>
+<main class="main">
+    <input type="checkbox" id="facts">
+    <label class="btn" for="facts">Интересные факты</label>
+    
+    <aside class="aside aside-left">
+        <h3>Интереcные факты</h3>
+        <section class="muscles">
+            <h3>МЫШЦЫ</h3>
+            <ul>
+                <li>&bull;	&nbsp;Всего в организме около 640 мышц.</li>
+                <li>&bull;	&nbsp;На лице и шее расположено более 50 мышц.</li>
+                <li>&bull;	&nbsp;Делая шаг человек включает в работу минимум 200 мышц.</li>
+                <li>&bull;	&nbsp;Самая большая - ягодичная.</li>
+                <li>&bull;	&nbsp;Самая сильная - икроножная.</li>
+                <li>&bull;	&nbsp;Самая быстрая - круговая (моргающая) вокруг глаза.</li>
+                <li>&bull;	&nbsp;Самая короткая - стременная 1,27мм (напрягает барабанную перепонку).</li>
+                <li>&bull;	&nbsp;Самая выносливая - сердечная (работает 100 и более лет).</li>
+                <li>&bull;	&nbsp;У 16% людей есть длинная ладонная мышца (у животных она для выпускания когтей).</li>
+            </ul>
+        </section>
+    </aside>
+
+    <div class="main-title"><h2>Мышцы и Кости</h2></div>
+    
+    <ul class="main-menu menu">
+        <li class="menu__item btn" 
+        onmouseover="showPreview('muscles-img')" 
+        onmouseout="hidePreview('muscles-img')"
+        onclick="showPopup(this,'popup-muscles')">Мышцы</li>
+
+        <li class="menu__item btn"
+        onmouseover="showPreview('bones-img')" 
+        onmouseout="hidePreview('bones-img')"
+        onclick="showPopup(this,'popup-bones')">Кости</li>
+    </ul>
+ 
+    <img class="main-content" id="muscles-img" src="src/img/skeleton/muscles-main.png" alt="Мышцы" width="100%">
+    <img class="main-content" id="bones-img" src="src/img/skeleton/bones-main.png" alt="Кости" width="100%">
+
+    <div id="popup-muscles" class="popup">
+        <hr><h4>Строение мышцы</h4>
+        <hr><img src="src/img/skeleton/muscles.png" alt="Строение мышцы" width="100%">
+        <hr>
+    </div>
+    <div id="popup-bones" class="popup">
+        <hr><h4>Строение кости</h4>
+        <hr><img src="src/img/skeleton/bones.png" alt="Строение кости" width="100%">
+        <hr>
+    </div>
+
+    <aside class="aside aside-right">
+        <h3>Интереcные факты</h3>
+        <section  class="bones">
+            <h3>КОСТИ</h3>
+            <ul>
+                <li>&bull;	&nbsp;Всего в организме примерно 206 костей (у младенца более 300).</li>
+                <li>&bull;	&nbsp;Кости пористые как губка, поэтому они легкие и прочные.</li>
+                <li>&bull;	&nbsp;Кости не белые, а имеют оттенки от бежевого до коричневого.</li>
+                <li>&bull;	&nbsp;Единственная кость, которая не соединена с другими - подъязычная.</li>
+                <li>&bull;	&nbsp;1 из 20 человек имеет лишнее ребро (чаще у мужчин).</li>
+                <li>&bull;	&nbsp;Самая маленькая - стремечко в ухе около 2,5мг, 3-4мм.</li>
+                <li>&bull;	&nbsp;Самая большая - бедренная.</li>
+                <li>&bull;	&nbsp;Самая прочная - большеберцова (в голени).</li>
+            </ul>
+        </section>
+    </aside>
+</main>
+
     <footer class="footer">
         <nav class="footer__nav">Навигация</nav>
         <div class="footer__social">Социальные сети</div>

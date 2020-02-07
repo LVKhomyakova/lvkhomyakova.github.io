@@ -10,9 +10,9 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <img src="src/img/main/logo200.jpg" alt="Череп" width="100%">
+            <a href="index.html"><img src="src/img/main/logo200.jpg" alt="Череп" width="100%"></a>
         </div>
-        <h1 class="header__title">Секреты&nbsp;человека</h1>
+        <a href="index.html"><h1 class="header__title">Секреты&nbsp;человека</h1></a>
         <nav class="header__menu">
             <input type="checkbox" id="menu">
             <label class=" btn" for="menu">&#9776</label>
@@ -56,32 +56,53 @@
         <div class="main-title"><h2>Органы Чувств</h2></div>
         
         <ul class="main-menu menu">
-            <li class="menu__item btn" onclick="showPopup(this,'popup-brain')">Мозг</li>
-            <li class="menu__item btn" onclick="showPopup(this,'popup-ear')">Ухо</li>
-            <li class="menu__item btn" onclick="showPopup(this,'popup-eye')">Глаз</li>
-            <li class="menu__item btn" onclick="showPopup(this,'popup-nose-tongue')">Носоглотка</li>
+            <li class="menu__item btn" 
+            onmouseover="showPreview('brain-img')" 
+            onmouseout="hidePreview('brain-img')"
+            onclick="showPopup(this,'popup-brain')">Мозг</li>
+
+            <li class="menu__item btn"
+            onmouseover="showPreview('ear-img')" 
+            onmouseout="hidePreview('ear-img')"
+            onclick="showPopup(this,'popup-ear')">Ухо</li>
+
+            <li class="menu__item btn"
+            onmouseover="showPreview('eye-img')" 
+            onmouseout="hidePreview('eye-img')"
+            onclick="showPopup(this,'popup-eye')">Глаз</li>
+
+            <li class="menu__item btn"
+            onmouseover="showPreview('nose-tongue-img')" 
+            onmouseout="hidePreview('nose-tongue-img')"
+            onclick="showPopup(this,'popup-nose-tongue')">Носоглотка</li>
         </ul>
      
-        <div class="main-content">
-            <img src="src/img/main/head.png" alt="Голова с внутренними органами" width="100%">
-        </div>
+        <img class="main-content" id="brain-img" src="src/img/head/brain-main.png" alt="Мозг" width="100%">
+        <img class="main-content" id="ear-img" src="src/img/head/ear-main.png" alt="Ухо" width="100%">
+        <img class="main-content" id="eye-img" src="src/img/head/eye-main.png" alt="Глаз" width="100%">
+        <img class="main-content" id="nose-tongue-img" src="src/img/head/nose-tongue-main.png" alt="Носоглотка" width="100%">
+        <img class="main-content" id="head-img" src="src/img/head/head-main.png" alt="Голова" width="100%">
 
 
         <div id="popup-brain" class="popup">
-            <h5>Строение мозга</h5>
-            <img src="src/img/head/brain.png" alt="Строение мозга" width="100%">
+            <hr><h4>Строение мозга</h4>
+            <hr><img src="src/img/head/brain.png" alt="Строение мозга" width="100%">
+            <hr>
         </div>
         <div id="popup-ear" class="popup">
-            <h5>Строение уха</h5>
-            <img src="src/img/head/ear.png" alt="Строение уха" width="100%">
+            <hr><h4>Строение уха</h4>
+            <hr><img src="src/img/head/ear.png" alt="Строение уха" width="100%">
+            <hr>
         </div>
         <div id="popup-eye" class="popup">
-            <h5>Строение глаза</h5>
-            <img src="src/img/head/eye.png" alt="Строение глаза" width="100%">
+            <hr><h4>Строение глаза</h4>
+            <hr><img src="src/img/head/eye.png" alt="Строение глаза" width="100%">
+            <hr>
         </div>
         <div id="popup-nose-tongue" class="popup">
-            <h5>Строение носа и полости рта</h5>
-            <img src="src/img/head/nose-tongue.png" alt="Строение носоглотки" width="100%">
+            <hr><h4>Строение носоглотки</h4>
+            <hr><img src="src/img/head/nose-tongue.png" alt="Строение носоглотки" width="100%">
+            <hr>
         </div>
 
         <aside class="aside aside-right">

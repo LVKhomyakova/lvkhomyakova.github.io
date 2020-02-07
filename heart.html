@@ -11,9 +11,9 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <img src="src/img/main/logo200.jpg" alt="Череп" width="100%">
+            <a href="index.html"><img src="src/img/main/logo200.jpg" alt="Череп" width="100%"></a>
         </div>
-        <h1 class="header__title">Секреты&nbsp;человека</h1>
+        <a href="index.html"><h1 class="header__title">Секреты&nbsp;человека</h1></a>
         <nav class="header__menu">
             <input type="checkbox" id="menu">
             <label class=" btn" for="menu">&#9776</label>
@@ -27,7 +27,72 @@
         </nav>
     </header>
 
-<h1>Дыхание и Кровоток</h1>
+<main class="main">
+    <input type="checkbox" id="facts">
+    <label class="btn" for="facts">Интересные факты</label>
+    
+    <aside class="aside aside-left">
+        <h3>Интереcные факты</h3>
+        <section class="lungs">
+            <h3>ЛЕГКИЕ</h3>
+            <ul>
+                <li>&bull;	&nbsp;Единственный орган, который не тонет в воде.</li>
+                <li>&bull;	&nbsp;Правое легкое больше левого из-за расположения сердца.</li>
+                <li>&bull;	&nbsp;Если развернуть легкие, то ими можно покрыть теннисный корт.</li>
+                <li>&bull;	&nbsp;Лишь 5% от вдыхаемого кислорода потребляется легкими.</li>
+                <li>&bull;	&nbsp;За день человек выдыхает столько воздуха, что можно надуть 10000 воздушных шариков.</li>
+                <li>&bull;	&nbsp;До 90% токсинов выводятся из организма через легкие.</li>
+                <li>&bull;	&nbsp;Около 4 человек может задержать дыхание более чем на 20 минут.</li>
+            </ul>
+        </section>
+    </aside>
+
+    <div class="main-title"><h2>Дыхание и Кровоток</h2></div>
+    
+    <ul class="main-menu menu">
+        <li class="menu__item btn" 
+        onmouseover="showPreview('lungs-img')" 
+        onmouseout="hidePreview('lungs-img')"
+        onclick="showPopup(this,'popup-lungs')">Легкие и диафрагма</li>
+
+        <li class="menu__item btn"
+        onmouseover="showPreview('heart-img')" 
+        onmouseout="hidePreview('heart-img')"
+        onclick="showPopup(this,'popup-heart')">Сердце и сосуды</li>
+    </ul>
+ 
+    <img class="main-content" id="lungs-img" src="src/img/heart/lungs-main.png" alt="Легкие и диафрагма" width="100%">
+    <img class="main-content" id="heart-img" src="src/img/heart/heart-vessels-main.png" alt="Сердце и сосуды" width="100%">
+
+    <div id="popup-lungs" class="popup">
+        <hr><h4>Строение легких</h4>
+        <hr><img src="src/img/heart/lungs.png" alt="Строение легких" width="100%">
+        <hr>
+    </div>
+    <div id="popup-heart" class="popup">
+        <hr><h4>Строение сердца</h4>
+        <hr><img src="src/img/heart/heart.png" alt="Строение сердца" width="100%">
+        <hr>
+    </div>
+
+    <aside class="aside aside-right">
+        <h3>Интереcные факты</h3>
+        <section  class="heart">
+            <h3>СЕРДЦЕ</h3>
+            <ul>
+                <li>&bull;	&nbsp;Примерный размер сердца человека - с его кулак (220-260г).</li>
+                <li>&bull;	&nbsp;Первая клетка сердца начинает биться через 4 недели.</li>
+                <li>&bull;	&nbsp;Сердце создает давление, способное поднять кровь на высоту до 10м.</li>
+                <li>&bull;	&nbsp;В теле человека от 4 до 6 литров крови.</li>
+                <li>&bull;	&nbsp;За сутки сердце прокачивает до 10000 литров.</li>
+                <li>&bull;	&nbsp;Стук сердца - это звук от захлопывания клапанов.</li>
+                <li>&bull;	&nbsp;Если развернуть все кровеносные сосуды, то ими можно обматать землю почти 3 раза.</li>
+                <li>&bull;	&nbsp;Диаметр мельчайшего капиляра примерно в 50 раз меньше диаметра волоса.</li>
+                <li>&bull;	&nbsp;Бывают случаи расположения сердца справа. - были случаи рождения с 2мя сердцами.</li>
+            </ul>
+        </section>
+    </aside>
+</main>
 
     <footer class="footer">
         <nav class="footer__nav">Навигация</nav>
