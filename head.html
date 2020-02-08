@@ -6,16 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Органы Чувств</title>
     <link rel='stylesheet' href='dist/style.css'>
+    <link rel="stylesheet" href="src/icofont/icofont.min.css">
 </head>
 <body>
     <header class="header">
         <div class="header__logo">
-            <a href="index.html"><img src="src/img/main/logo200.jpg" alt="Череп" width="100%"></a>
+            <a href="index.html"><img src="src/img/main/logo.jpg" alt="Череп" width="100%"></a>
+            <div class="logo-eye logo-eye-left"></div>
+            <div class="logo-eye logo-eye-right"></div>
         </div>
-        <a href="index.html"><h1 class="header__title">Секреты&nbsp;человека</h1></a>
+        <a href="index.html"><h1 class="header__title">Секреты человека</h1></a>
         <nav class="header__menu">
             <input type="checkbox" id="menu">
-            <label class=" btn" for="menu">&#9776</label>
+            <label class="btn" for="menu">&#9776</label>
             <ul class="menu menu-header">
                 <a class="menu__item btn" href="index.html">Главная</a>
                 <a class="menu__item btn" href="head.html">Органы Чувств</a>
@@ -27,7 +30,7 @@
     </header>
     <main class="main">
         <input type="checkbox" id="facts">
-        <label class="btn" for="facts">Интересные факты</label>
+        <label class="btn-sm" for="facts">Интересные факты</label>
         
         <aside class="aside aside-left">
             <h3>Интереcные факты</h3>
@@ -37,7 +40,7 @@
                     <li>&bull;	&nbsp;Гениальность не зависит от размера мозга.</li>
                     <li>&bull;	&nbsp;Мозг взрослого весит как 10 яблок.</li>
                     <li>&bull;	&nbsp;Мозг состоит из 2 долей: левая и правая.</li>
-                    <li>&bull;	&nbsp;Левая доля контролирует правую сторону тела, а правая - левую.</li>
+                    <li>&bull;	&nbsp;Левая доля контролирует правую сторону тела, а правая &mdash; левую.</li>
                     <li>&bull;	&nbsp;Мозговой ствол заставляет сердце, легкие и пищевод работаь все время.</li>
                     <li>&bull;	&nbsp;Мозг мягкий и липкий на ощупь, не чувствует боли.</li>
                 </ul>
@@ -48,7 +51,7 @@
                     <li>&bull;	&nbsp;Рядом с улиткой уха есть 3 канала, которые работают как гироскоп, чтобы держать равновесие.</li>
                     <li>&bull;	&nbsp;Уши растут всю жизнь.</li>
                     <li>&bull;	&nbsp;90Дб для человека уже считается опасным. Звук, более 140Дб, вызывает моментальное ежесекундное повреждение слуха.</li>
-                    <li>&bull;	&nbsp;Не многие умеют шевелить ушами, и только 1/3 из умеющих может шевелить ушами по отдельности.</li>
+                    <li>&bull;	&nbsp;Не многие умеют шевелить ушами, и только 1&frasl;3 из умеющих может шевелить ушами по отдельности.</li>
                 </ul>
             </section>
         </aside>
@@ -56,22 +59,22 @@
         <div class="main-title"><h2>Органы Чувств</h2></div>
         
         <ul class="main-menu menu">
-            <li class="menu__item btn" 
+            <li class="menu__item btn-sm" 
             onmouseover="showPreview('brain-img')" 
             onmouseout="hidePreview('brain-img')"
             onclick="showPopup(this,'popup-brain')">Мозг</li>
 
-            <li class="menu__item btn"
+            <li class="menu__item btn-sm"
             onmouseover="showPreview('ear-img')" 
             onmouseout="hidePreview('ear-img')"
             onclick="showPopup(this,'popup-ear')">Ухо</li>
 
-            <li class="menu__item btn"
+            <li class="menu__item btn-sm"
             onmouseover="showPreview('eye-img')" 
             onmouseout="hidePreview('eye-img')"
             onclick="showPopup(this,'popup-eye')">Глаз</li>
 
-            <li class="menu__item btn"
+            <li class="menu__item btn-sm"
             onmouseover="showPreview('nose-tongue-img')" 
             onmouseout="hidePreview('nose-tongue-img')"
             onclick="showPopup(this,'popup-nose-tongue')">Носоглотка</li>
@@ -110,9 +113,9 @@
             <section  class="eye">
                 <h3>ГЛАЗ</h3>
                 <ul>
-                    <li>&bull;	&nbsp;Cредний диаметр глаза 24-25мм.</li>
-                    <li>&bull;	&nbsp;Глаз различает 100-150 цветов.</li>
-                    <li>&bull;	&nbsp;Самые редкие глаза — зеленые (2%).</li>
+                    <li>&bull;	&nbsp;Cредний диаметр глаза 24&ndash;25мм.</li>
+                    <li>&bull;	&nbsp;Глаз различает 100&ndash;150 цветов.</li>
+                    <li>&bull;	&nbsp;Самые редкие глаза &mdash; зеленые (2%).</li>
                     <li>&bull;	&nbsp;1% населения имеет разный цвет глаз.</li>
                     <li>&bull;	&nbsp;Около 10000лет назад у всех глаза были карие.</li>
                     <li>&bull;	&nbsp;На сетчатке картинка формируется в перевернутом виде.</li>
@@ -128,16 +131,32 @@
                     <li>&bull;	&nbsp;У языка от 2000 до 4000 вкусовых рецепторов.</li>
                     <li>&bull;	&nbsp;Средний язык около 8,5 см в длину.</li>
                     <li>&bull;	&nbsp;Отпечаток языка уникален.</li>
-                    <li>&bull;	&nbsp;Язык чувствует 4 основных вкуса: горький, сладкий, кислый, соленый, а также 5ый - умами (пикантный).</li>
+                    <li>&bull;	&nbsp;Язык чувствует 4 основных вкуса: горький, сладкий, кислый, соленый, а также 5ый &mdash; умами (пикантный).</li>
                 </ul>
             </section>
         </aside>
 
     </main>
     <footer class="footer">
-        <nav class="footer__nav">Навигация</nav>
-        <div class="footer__social">Социальные сети</div>
-        <div class="footer__contacts">Контакты</div>
+        <nav class="footer__nav">
+            <h3>Секреты человека</h3>
+            <a href="index.html">Главная</a>
+            <a href="head.html">Органы Чувств</a>
+            <a href="skeleton.html">Мышцы и&nbsp;Кости</a>
+            <a href="organs.html">Органы&nbsp;и Пищеварение</a>
+            <a href="heart.html">Дыхание и&nbsp;Кровоток</a>
+        </nav>
+        <div class="footer__social">
+            <h3>Социальные сети</h3>
+            <a href="https://twitter.com/" target="_blank"><i class="icofont-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a>
+        </div>
+        <div class="footer__contacts">
+            <h3>Контакты</h3>
+            <p>&#x260e; &ndash; +375 44 111&ndash;11&ndash;11</p>
+            <p> &#x2709; &ndash; LVKhomyakova@gmail.com</p>
+        </div>
     </footer>
 
     <script type="text/javascript" src="dist/bundle.js"></script>
