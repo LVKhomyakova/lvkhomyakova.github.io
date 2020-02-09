@@ -7,6 +7,7 @@
     <title>Дыхание и Кровоток</title>
     <link rel='stylesheet' href='dist/style.css'>
     <link rel="stylesheet" href="src/icofont/icofont.min.css">
+
 </head>
 <body>
     <header class="header">
@@ -73,7 +74,13 @@
     </div>
     <div id="popup-heart" class="popup">
         <hr><h4>Строение сердца</h4>
-        <hr><img  class="heart-animated" src="src/img/heart/empty.png" alt="Строение сердца" width="100%">
+        <hr>
+        <input type="radio" id="play" name="animation" checked>
+        <input type="radio" id="stop" name="animation">
+        <label class="label-play" for="play"><i class="icofont-play-alt-1"></i></label>
+        <label class="label-stop" for="stop"><i class="icofont-stop"></i></label>
+
+        <img  class="heart-animated" src="src/img/heart/empty.png" alt="Строение сердца" width="100%">
         <hr>
     </div>
 
